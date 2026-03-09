@@ -12,11 +12,13 @@ const app: Application = express();
 app.use(
   cors({
     origin: [
-      "https://edureach-backend.onrender.com",
+      "http://localhost:5173",
+      "http://localhost:5174",
+      "https://edureach-ai-chatbot.vercel.app"
     ],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
-    allowedHeaders: ["Content-Type", "Authorization"],
+    allowedHeaders: ["Content-Type", "Authorization"]
   })
 );
 
